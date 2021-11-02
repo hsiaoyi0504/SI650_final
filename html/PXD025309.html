@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="/css/isb.css" /><title>ProteomeXchange Dataset PXD025309</title>
+</head><body bgcolor="#f4f6f8" marginwidth="0" marginheight="0">	<table width="100%" height="127" background="/images/topbackground.jpg" style="box-shadow: 0 6px 8px 0 rgba(0,0,0,0.3);">	<tr align="center"><td><a href="http://www.proteomexchange.org/" border="0"><img src="/images/proteomexchange.png"></a></td><td><a href="http://proteomecentral.proteomexchange.org/" border="0"><img src="/images/proteomecentral.png"></a></td></tr>	</table>		<!-- Main content area here --><!-- BEGIN main content -->
+
+	 <link rel='stylesheet' id='style-css'  href='../javascript/css/patchwork.css' type='text/css' media='all' />
+         <script type="text/javascript" src="/javascript/js/toggle.js"></script>
+      
+       <div id="main">
+       <a class="linkback" href="http://proteomecentral.proteomexchange.org/cgi/GetDataset"> &lt;&lt;&lt; Full experiment listing </a>
+       <div id="dataset-primary" class="site-content">
+       <h1 class="dataset-title">PXD025309</h1>
+    
+	<div class="dataset-content">
+	PXD025309 is an <b>original dataset</b> announced via ProteomeXchange.<BR><BR><div class='dataset-secthead'>Dataset Summary</div>
+<table class='dataset-summary'><tr><td><b>Title</b></td><td>Multiple roles for PARP1 in ALC1-dependent nucleosome remodeling</td></tr><tr><td><b>Description</b></td><td class='breakwords'>XL-MS mass spectrometry analysis Cross-linked peptides were resolved for mass spectrometry analysis using a Dionex UltiMate 3000 RSLnano liquid chromatography system. Peptides were initially loaded from the autosampler onto an Acclaim PepMap 100 C18 LC Trap Cartridge (0.3 mm inside diameter, 5 mm length) (Thermo Scientific, San Jose, CA) using a loading pump flow rate of 2 ul/minute. Peptides were subsequently resolved for mass spectrometry analysis using an analytical column (75 um inside diameter, 150 mm length) packed in-house with ReproSil-Pur C18-aQ 1.9 um resin (Dr. Masch GmbH, Germany). Chromatography was performed using combinations of buffer A (95% water, 5% acetonitrile, and 0.1% formic acid (v/v/v), pH 2.6), and buffer B (20% water, 80% acetonitrile, and 0.1% formic acid (v/v/v), pH 2.6).  The following chromatography steps were performed using a flow rate of 180 nl/minute: (1) 2% B for 20 minutes (column equilibration); (2) a linear gradient from 2% to 10% B over 10 minutes; (3) a linear gradient from 10% to 40% B over either 120 minutes or 240 minutes; (4) a linear gradient from 40% to 95% B over 5 minutes; (5) 95% B for 14 minutes (column wash); (6) a linear gradient from 95% B to 2% B over 1 minute; (7) 2% B for 10 minutes (column re-equilibration).
+Eluted peptides were analyzed by mass spectrometry using an Orbitrap Fusio Lumo mass spectrometer (Thermo Scientific, San Jose, CA). An MS3 based method was used for identification of DSSO cross-linked peptides as follows: Full MS scans were performed using the Orbitrap mass analyzer (60,000 m/z resolution, 1.6 m/z isolation window, and 375-1500 m/z scan range); The  top 3 peptides identified with charge state 4 to 8 were selected for MS2 fragmentation (25% CID energy) and subsequent detection with the Orbitrap mass analyzer (30,000 m/z resolution and a dynamic exclusion time of 40 s);  Pairs of MS2 fragments with a mass difference of 31.9720 (20 ppm mass tolerance) were selected for MS3 fragmentation (CID energy 35%) and detection using the Linear Ion Trap mass analyzer;  Each MS2 scan was followed by a maximum of 4 MS3 scans. 
+Identification of DSSO Cross-Linked Peptides The m/z, charges from MS2 and corresponding m/z and intensities of fragment ion from MS3 spectra were extracted into ms2 file format using RawDistiller v. 1.0, in-house developed software with D(g, 6) settings to abstract parent ion profiles by Gaussian fitting and dynamic offline lock mass using six background polydimethylcyclosiloxane ions as internal calibrants.  MS3 spectra were first searched using ProLuCID with a mass tolerance for parent ions and fragment ions set as 7 ppm and 800 ppm, respectively. Trypsin specificity was imposed on both ends of candidate peptides during the search against a protein database combining 4540 proteins including 426 common contaminants.  The methionine oxidation (O; 15.9949 Da) and remnants of the crosslinker alkene (C3H2O; +54.0106 Da) and thiol (C3H2SO; +85.9826 Da) were set as variable modifications.  A static modification with a mass of 57.0125Da was added to cysteine residues.  A script module was added into NSAF7 to search MSn data and identify putative crosslinkers based on their unique MS fragmentation patterns with the false positive rate was not more than 1% as illustrated in.  The Xcorr of the peptides for a specified cross-linker was summed as scores S and use log2(10*log2(S+1)+1) to calculate the cross-linker scores.  The non-cross-linking peptide/spectrum matches were sorted and selected using DTASelect/CONTRAST (v. 1.9) with an in-house software, swallow to filter spectra, peptides, and proteins at FDRs <1%.   NSAF7 was used to create the final reports on all detected cross-linkers, peptides and non-redundant proteins identified across the different runs.  
+
+
+
+
+
+
+
+
+
+
+  
+</td></tr><tr><td><b>HostingRepository</b></td><td>MassIVE</td></tr><tr><td><b>AnnounceDate</b></td><td>2021-08-02</td></tr>
+                <tr><td><b>AnnouncementXML</b></td><td><a href='GetDataset?ID=PXD025309.0-1&outputMode=XML&test=no' target="_blank">Submission_2021-08-02_07:33:13.382.xml</a></td></tr>
+                <tr><td><b>DigitalObjectIdentifier</b></td><td><a href="" target="_blank"></a></td></tr><tr><td><b>ReviewLevel</b></td><td>Non peer-reviewed dataset</td></tr><tr><td><b>DatasetOrigin</b></td><td>Original dataset</td></tr><tr><td><b>RepositorySupport</b></td><td>Supported dataset by repository</td></tr><tr><td><b>PrimarySubmitter</b></td><td>Stowers Proteomics</td></tr><tr><td><b>SpeciesList</b></td><td> scientific name: Homo sapiens;  common name: human;  NCBI TaxID: 9606; </td></tr><tr><td><b>ModificationList</b></td><td>S-carboxamidomethyl-L-cysteine; unknown modification; unknown modification; L-methionine sulfoxide</td></tr><tr><td><b>Instrument</b></td><td>Orbitrap Fusion Lumos</td></tr></table>
+<div class='dataset-secthead'>Dataset History</div>
+<table class="dataset-summary">
+<tr><th>Revision</th><th>Datetime</th><th>Status</th><th>ChangeLog Entry</th></tr>
+<tr><td >0</td><td >2021-04-10 20:56:06</td><td >ID requested</td><td ></td></tr>
+<tr><td class="dataset-currentrev"><a href="GetDataset?ID=PXD025309-1&test=no"><span class='current'>&#9205;</span> 1</a></td><td class="dataset-currentrev">2021-08-02 07:33:13</td><td class="dataset-currentrev">announced</td><td class="dataset-currentrev"></td></tr>
+</table>
+<div class='dataset-secthead'>Publication List </div>
+<table class='dataset-summary'>
+<tr><td>no publication</td></tr></table>
+<div class='dataset-secthead'>Keyword List </div>
+<table class='dataset-summary'>
+<tr><td>submitter keyword: PARP1, XL-MS</td></tr></table>
+<div class='dataset-secthead'>Contact List </div>
+<table class='dataset-summary'>
+<tr><th colspan='2'>Laurence Florens</th></tr>
+<tr><td>contact affiliation</td><td>The Stowers Institute for Medical Research</td></tr><tr><td>contact email</td><td>laf@stowers.org</td></tr><tr><td>lab head</td><td></td></tr><tr><th colspan='2'>Stowers Proteomics</th></tr>
+<tr><td>contact affiliation</td><td>Stowers Institute for Med Res</td></tr><tr><td>contact email</td><td>proteomicslab@stowers.org</td></tr><tr><td>dataset submitter</td><td></td></tr></table>
+<div class='dataset-secthead'>Full Dataset Link List </div>
+<table class='dataset-summary'>
+<tr><td><a href=http://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=205de86fc0ad4e4d94a8687b3ff76fbe target="_blank">MassIVE dataset URI</a></td></tr><tr><td><a href=ftp://massive.ucsd.edu/MSV000087174/ target="_blank">Dataset FTP location</a></td></tr></table>
+
+      
+	 </div><!-- #content -->
+	 </div><!-- #primary .site-content -->
+	 </div><!-- #main -->
+      <!-- END main content -->	<!-- Begin Footer -->	<br clear="all">	<div class="footer">	<table width="100%"><tr>	<td style="vertical-align:top; text-align:left; padding: 10px;">If you have a question or comment about ProteomeXchange, please <a href="http://www.proteomexchange.org/contact">contact us</a>!<BR>	<a href="http://www.proteomexchange.org/subscribe/index.html"><img width="70" height="20" src="/images/subscribe_button-small.jpg"><font size="+1" color="#aa0000"> to receive all new ProteomeXchange dataset release announcements!</font></a>	</td>	<td style="text-align:right; padding: 10px;">	<a class="logolink" target="_blank" href="http://www.ebi.ac.uk/"><img src="/images/ebi_footer_logo.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;	<a class="logolink" target="_blank" href="http://www.isbscience.org/"><img src="/images/isb.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;	<a class="logolink" target="_blank" href="http://ec.europa.eu/research/fp7/index_en.cfm"><img src="/images/capacities.png"></a>	</td></tr></table>	</div>				</body></html>

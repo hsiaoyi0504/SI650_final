@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="/css/isb.css" /><title>ProteomeXchange Dataset PXD009548</title>
+</head><body bgcolor="#f4f6f8" marginwidth="0" marginheight="0">	<table width="100%" height="127" background="/images/topbackground.jpg" style="box-shadow: 0 6px 8px 0 rgba(0,0,0,0.3);">	<tr align="center"><td><a href="http://www.proteomexchange.org/" border="0"><img src="/images/proteomexchange.png"></a></td><td><a href="http://proteomecentral.proteomexchange.org/" border="0"><img src="/images/proteomecentral.png"></a></td></tr>	</table>		<!-- Main content area here --><!-- BEGIN main content -->
+
+	 <link rel='stylesheet' id='style-css'  href='../javascript/css/patchwork.css' type='text/css' media='all' />
+         <script type="text/javascript" src="/javascript/js/toggle.js"></script>
+      
+       <div id="main">
+       <a class="linkback" href="http://proteomecentral.proteomexchange.org/cgi/GetDataset"> &lt;&lt;&lt; Full experiment listing </a>
+       <div id="dataset-primary" class="site-content">
+       <h1 class="dataset-title">PXD009548</h1>
+    
+	<div class="dataset-content">
+	PXD009548 is an <b>original dataset</b> announced via ProteomeXchange.<BR><BR><div class='dataset-secthead'>Dataset Summary</div>
+<table class='dataset-summary'><tr><td><b>Title</b></td><td>Probing the Sensitivity of the Lumos Mass Spectrometer by analyzing varying amounts of whole cell extracts</td></tr><tr><td><b>Description</b></td><td class='breakwords'>PROJECT DESCRIPTION
+The Orbitrap Fusion Lumos mass spectrometer has recently been shown to have better fragmentation and detection than its predecessors. Previous studies using a HeLa digest analyzed on the Lumos mass spectrometer have reported the number of peptides and proteins identified by reverse phase elution: Espadas et. al. (2017) observed an increase in detected proteins of approximately 26% when the digest concentration was increased from 100ng to 1000ng. We observed similar increases in protein identification when varying the concentration of yeast whole cell lysate. Furthermore, the concentration of starting whole cell lysate was decreased to determine the number of proteins that could be identified from as low as 5ng of whole cell lysate analyzed following a logarithmic trend.
+SAMPLE PROCESSING PROTOCOL
+Yeast (S288C) was grown overnight to an OD600=1.5 in YPD media. The cells were pelleted by centrifuging at 6000 x g for 6 minutes at 4oC. Cells were resuspended in TAP extraction buffer (40 mM HEPES-KOH, pH 7.5, 10% glycerol, 350 mM NaCl, 0.1% Tween-20, 1 mM PMSF, 0.5 mM DTT) and lysed by freezing in liquid nitrogen. Proteins were extracted by breaking the cells using a blender (Waring Commercial). Heparin (Sigma) and salt active nuclease (ArticZymes, Tromso, Norway) were added for 20 minutes at room temperature before proteins were separated from cellular material by centrifuging for 15 minutes at 4000 rpm at 4oC on a table top centrifuge (Eppendorf 5810-R). The supernatant was reserved, and the cell pellet resuspended in TAP extraction up to 6 times to extract all soluble proteins. The supernatants were pooled and further clarified by centrifuging at 14, 000 rpm for 30 minutes at 4oC using a tabletop centrifuge (Beckman Coulter Microfuge 22R). Protein content was quantitated using the Pierce BCA Protein Assay (Thermo).
+Protein Digestion
+Yeast whole cell lysate was denatured by adding 8M urea and disulfide bonds were reduced with 5 mM TCEP for 30 minutes before modifying the cysteine residues by carbamidomethylation (10 mM for 30 min in the dark). Endoproteinase Lys-C was added, and proteins digested overnight at 37oC. Urea was diluted to 2M with 100mM Tris-HCl, pH 8.5 before adding trypsin to digest overnight at 37oC. The digestion reaction was quenched by the addition of formic acid to 5%. Peptides were stored at -20oC until use.
+Peptide Separation
+Yeast whole cell extract digests were diluted to varying final concentration with buffer A (5% acetonitrile (ACN), 0.1% formic acid (FA) in water).  The samples were injected in triplicate using the auto-sampler on an UltiMate 3000 liquid chromatography system (Thermo Scientific) connected inline to the Q Exactive Plus or Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Scientific) fitted with the Nanospray Flex NG ion source. Peptides were trapped on a 15cm reverse phase column (5um Aqua (Phenomenex), 100um i.d.) and equilibrated with 2% buffer B (80% ACN, 0.1% FA in water) for 15 minutes at a flow rate of 300 nL/min before increasing the concentration of buffer B to 7% over 5 minutes. A linear gradient to 32% buffer B over 122 minutes was used to elute the majority of the peptides before increasing buffer B to 95% over 15 min and holding for an additional 12 minutes. The column was re-equilibrated with 2% buffer B before the next injection. 
+Mass Spectrometry
+The eluted peptides were ionized for detection by the Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Lumos) or Q Exactive Plus (QE+) mass spectrometer. Source conditions for both instruments were as follows: voltage, 2.5 kV, transfer tube temperature, 275oC. Peptides (MS1) were detected in the Orbitrap with the following settings: Lumos resolving power 60,000, QE+ resolving power 70,000; scan range m/z 400-1600; S-Lens RF 55%; Lumos AGC target 4.0 x 105, QE+ AGC target 1.0 x 106; microscans, 1. The top 15 peptides were selected in a data dependent mode for MS/MS fragmentation by CID at 35% NCE (Lumos) or HCD at 27% NCE (QE+) to be detected in the Orbitrap (Lumos resolving power 15,000 or QE+ resolving power 17,500) or ion trap on the Lumos with dynamic exclusion for 30s with the Lumos AGC target set to 1.0 x 104 and QE+ AGC target at 1.0 x 105.
+
+DATA PROCESSING PROTOCOL
+All datasets were searched with the ProLuCID search engine (v. 1.3.3) against the S. cerevisiae database downloaded from NCBI updated on May 16, 2017 with the NIST mAb sequence added as well as 160 common contaminants. The database also contained the shuffled protein sequences to estimate false discovery rates (FDRs). The result files from ProLuCID were further processed with DTASelect (v 1.9) to correlate peptide level information into protein information. Using in-house developed software, swallow, the peptide spectrum matches were maintained at FDR less than 5% for peptide and protein level matches. The datasets were compared using Contrast16 and quantitated using our in-house software NSAF7 (v 0.0.1).
+</td></tr><tr><td><b>HostingRepository</b></td><td>MassIVE</td></tr><tr><td><b>AnnounceDate</b></td><td>2018-09-11</td></tr>
+                <tr><td><b>AnnouncementXML</b></td><td><a href='GetDataset?ID=PXD009548-1&outputMode=XML&test=no' target="_blank">Submission_2018-09-11_08:57:11.xml</a></td></tr>
+                <tr><td><b>DigitalObjectIdentifier</b></td><td><a href="" target="_blank"></a></td></tr><tr><td><b>ReviewLevel</b></td><td>Peer-reviewed dataset</td></tr><tr><td><b>DatasetOrigin</b></td><td>Original dataset</td></tr><tr><td><b>RepositorySupport</b></td><td>Supported dataset by repository</td></tr><tr><td><b>PrimarySubmitter</b></td><td>Michaella Levy</td></tr><tr><td><b>SpeciesList</b></td><td> scientific name: Saccharomyces cerevisiae;  common name: baker's yeast;  NCBI TaxID: 4932; </td></tr><tr><td><b>ModificationList</b></td><td>L-methionine sulfoxide</td></tr><tr><td><b>Instrument</b></td><td>Q Exactive; instrument model: Thermo Fusion Lumos</td></tr></table>
+<div class='dataset-secthead'>Dataset History</div>
+<table class="dataset-summary">
+<tr><th>Revision</th><th>Datetime</th><th>Status</th><th>ChangeLog Entry</th></tr>
+<tr><td >0</td><td >2018-04-19 15:43:37</td><td >ID requested</td><td ></td></tr>
+<tr><td class="dataset-currentrev"><a href="GetDataset?ID=PXD009548-1&test=no"><span class='current'>&#9205;</span> 1</a></td><td class="dataset-currentrev">2018-09-11 08:57:12</td><td class="dataset-currentrev">announced</td><td class="dataset-currentrev"></td></tr>
+</table>
+<div class='dataset-secthead'>Publication List </div>
+<table class='dataset-summary'>
+<tr><td>Levy MJ, Washburn MP, Florens L, Probing the Sensitivity of the Orbitrap Lumos Mass Spectrometer Using a Standard Reference Protein in a Complex Background. J Proteome Res, 17(10):3586-3592(2018) [<a href="https://www.ncbi.nlm.nih.gov/pubmed?term=30180573" target="_blank">pubmed</a>]</td></tr></table>
+<div class='dataset-secthead'>Keyword List </div>
+<table class='dataset-summary'>
+<tr><td>submitter keyword: Orbitrap Lumos, Proteomics, Limit of Detection, Sensitivity, Mass Spectrometry, Data dependent acquisition</td></tr></table>
+<div class='dataset-secthead'>Contact List </div>
+<table class='dataset-summary'>
+<tr><th colspan='2'>Laurence Florens</th></tr>
+<tr><td>contact affiliation</td><td>Stowers Institute for Medical Research</td></tr><tr><td>contact email</td><td>laf@stowers.org</td></tr><tr><td>lab head</td><td></td></tr><tr><th colspan='2'>Michaella Levy</th></tr>
+<tr><td>contact affiliation</td><td>Stowers Institute for Medical Research</td></tr><tr><td>contact email</td><td>mly@stowers.org</td></tr><tr><td>dataset submitter</td><td></td></tr></table>
+<div class='dataset-secthead'>Full Dataset Link List </div>
+<table class='dataset-summary'>
+<tr><td><a href=http://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=c7b07c867e7543c69c574ad5309f3864 target="_blank">MassIVE dataset URI</a></td></tr><tr><td><a href=ftp://massive.ucsd.edu/MSV000082296 target="_blank">Dataset FTP location</a></td></tr></table>
+
+      
+	 </div><!-- #content -->
+	 </div><!-- #primary .site-content -->
+	 </div><!-- #main -->
+      <!-- END main content -->	<!-- Begin Footer -->	<br clear="all">	<div class="footer">	<table width="100%"><tr>	<td style="vertical-align:top; text-align:left; padding: 10px;">If you have a question or comment about ProteomeXchange, please <a href="http://www.proteomexchange.org/contact">contact us</a>!<BR>	<a href="http://www.proteomexchange.org/subscribe/index.html"><img width="70" height="20" src="/images/subscribe_button-small.jpg"><font size="+1" color="#aa0000"> to receive all new ProteomeXchange dataset release announcements!</font></a>	</td>	<td style="text-align:right; padding: 10px;">	<a class="logolink" target="_blank" href="http://www.ebi.ac.uk/"><img src="/images/ebi_footer_logo.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;	<a class="logolink" target="_blank" href="http://www.isbscience.org/"><img src="/images/isb.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;	<a class="logolink" target="_blank" href="http://ec.europa.eu/research/fp7/index_en.cfm"><img src="/images/capacities.png"></a>	</td></tr></table>	</div>				</body></html>
