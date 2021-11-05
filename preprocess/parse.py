@@ -22,7 +22,7 @@ for i in range(1,29446):
         # row += [publication, keyword]
         row.append(keyword)
         df.append(row)
-df = pd.DataFrame(df, columns=['id', 'Title', 'Desciption', 'HostingRepository', 'AnnounceDate',
+df = pd.DataFrame(df, columns=['id', 'Title', 'Description', 'HostingRepository', 'AnnounceDate',
                              'AnnouncementXML', 'DigitalObjectIdentifier', 'ReviewLevel',
                              'DatasetOrigin', 'RepositorySupport', 'PrimarySubmitter',
                              'SpeciesList', 'ModificationList', 'Instrument', 'Keyword'])
