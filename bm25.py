@@ -1,6 +1,24 @@
 from pyserini.search import SimpleSearcher
 
+CUSTOMIZE_BM25 = True
+QUERY_EXPANSION = True
+
+# Parameters for BM25
+BM25_k1 = 0.9 
+BM25_b = 0.4
+
+# Parameters for RM3 query_expansion
+RM3_fb_terms = 10 # number of expansion terms.
+RM3_fb_docs = 10 # number of expansion documents.
+RM3_original_query_weight = 0.5 # weight to assign to the original query.
+
 searcher = SimpleSearcher('indexes/')
+
+if CUSTOMIZE_BM25:
+    searcher.set_bm25(BM25_k1, BM25_b)
+if QUERY_EXPANSION:
+    searcher.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, True)
+
 hits = searcher.search('liver')
 
 for i in range(10):
