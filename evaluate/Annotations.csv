@@ -1,0 +1,172 @@
+Query,Entry,Score,Ranking By proteoXchange,Annotator,Baseline  Model
+,,,2,,
+,,,4,,
+,,,X,,
+,,,X,,
+,,,,,
+chromatin-pellet extract,PXD028787,5,X,Leo,3
+chromatin-pellet extract,PXD028668,5,X,Leo,2
+chromatin-pellet extract,PXD028660,5,X,Leo,1
+chromatin-pellet extract,PXD016266,0,X,Leo,X
+chromatin-pellet extract,PXD008659,0,X,Leo,X
+chromatin-pellet extract,PXD004104,0,X,Leo,X
+chromatin-pellet extract,PXD007525,0,X,Leo,5
+,,,,,
+drug-metabolizing,PXD008190,5,1,Leo,6
+drug-metabolizing,PXD007913,5,X,Leo,X
+drug-metabolizing,PXD008237,5,X,Leo,X
+drug-metabolizing,PXD010912,5,X,Leo,X
+drug-metabolizing,PXD013265,0,X,Leo,
+drug-metabolizing,PXD022969,0,X,Leo,
+drug-metabolizing,PXD001210,5,X,Leo,
+drug-metabolizing,PXD008190,5,X,Leo,
+drug-metabolizing,PXD010342,0,X,Leo,
+drug-metabolizing,PXD012043,3,X,Leo,
+drug-metabolizing,PXD014864,4,X,Leo,
+drug-metabolizing,PXD012000,0,X,Leo,
+,,,,,
+DIA-NN,PXD026250,5,1,Leo,X
+DIA-NN,PXD014690,5,2,Leo,1
+DIA-NN,PXD017639,3,X,Leo,X
+DIA-NN,PXD025752,5,X,Leo,3
+DIA-NN,PXD026600,5,X,Leo,2
+DIA-NN,PXD019924,0,X,Leo,
+DIA-NN,PXD013685,0,X,Leo,
+DIA-NN,PXD022287,0,X,Leo,
+DIA-NN,PXD011449,0,X,Leo,
+DIA-NN,PXD010912,0,X,Leo,
+DIA-NN,PXD026965,0,X,Leo,
+DIA-NN,PXD006934,0,X,Leo,
+,,,,,
+clear cell renal cell carcinoma,PXD020554,5,1,Leo,4
+clear cell renal cell carcinoma,PXD020553,5,2,Leo,3
+clear cell renal cell carcinoma,PXD016630,5,3,Leo,X
+clear cell renal cell carcinoma,PXD013111,5,4,Leo,9
+clear cell renal cell carcinoma,PXD003271,5,5,Leo,1
+clear cell renal cell carcinoma,PXD017149,5,X,Leo,
+clear cell renal cell carcinoma,PXD013127,5,X,Leo,
+clear cell renal cell carcinoma,PXD005453,5,X,Leo,
+clear cell renal cell carcinoma,PXD019123,3,X,Leo,
+clear cell renal cell carcinoma,PXD014289,5,X,Leo,
+clear cell renal cell carcinoma,PXD006482,5,X,Leo,
+clear cell renal cell carcinoma,PXD006833,0,X,Leo,
+clear cell renal cell carcinoma,PXD002600,5,X,Leo,
+clear cell renal cell carcinoma,PXD011681,5,X,Leo,
+clear cell renal cell carcinoma,PXD05710,5,X,Leo,
+clear cell renal cell carcinoma,PXD009110,5,X,Leo,
+clear cell renal cell carcinoma,PXD012288,5,X,Leo,
+clear cell renal cell carcinoma,PXD004595,5,X,Leo,2
+,,,,,
+triple-negative breast cancer,PXD026291,5,1,Leo,
+triple-negative breast cancer,PXD015804,5,2,Leo,
+triple-negative breast cancer,PXD013968,5,3,Leo,
+triple-negative breast cancer,PXD021276,5,4,Leo,
+triple-negative breast cancer,PXD019947,5,5,Leo,
+triple-negative breast cancer,PXD019946,5,6,Leo,
+triple-negative breast cancer,PXD015141,5,7,Leo,
+triple-negative breast cancer,PXD014414,5,8,Leo,
+triple-negative breast cancer,PXD017025,5,9,Leo,
+triple-negative breast cancer,PXD013821,5,10,Leo,
+triple-negative breast cancer,PXD011253,5,11,Leo,
+triple-negative breast cancer,PXD013397,5,12,Leo,
+triple-negative breast cancer,PXD005544,5,13,Leo,
+triple-negative breast cancer,PXD008012,5,14,Leo,
+triple-negative breast cancer,PXD008222,5,15,Leo,6
+triple-negative breast cancer,PXD020585,5,X,Leo,
+triple-negative breast cancer,PXD004658,2,X,Leo,
+triple-negative breast cancer,PXD012980,2,X,Leo,
+triple-negative breast cancer,PXD020585,5,X,Leo,
+triple-negative breast cancer,PXD004658,2,X,Leo,
+triple-negative breast cancer,PXD012980,2,X,Leo,
+triple-negative breast cancer,PXD021201,5,X,Leo,
+triple-negative breast cancer,PXD001222,5,X,Leo,
+triple-negative breast cancer,PXD016688,5,X,Leo,
+triple-negative breast cancer,PXD021181,5,X,Leo,
+triple-negative breast cancer,,,X,Leo,
+triple-negative breast cancer,,,X,Leo,
+triple-negative breast cancer,,,X,Leo,
+,,,,,
+MHCII immunopeptidome,PXD018783,5,1,Leo,1
+MHCII immunopeptidome,PXD023581,5,2,Leo,2
+MHCII immunopeptidome,PXD024239,5,X,Leo,5
+MHCII immunopeptidome,PXD009791,5,X,Leo,
+,,,,,
+sporulation,PXD025157,5,1,Leo,1
+sporulation,PXD018842,5,2,Leo,2
+sporulation,PXD006213,5,3,Leo,
+sporulation,PXD000020,5,4,Leo,
+sporulation,PXD010120,5,5,Leo,
+sporulation,PXD008245,5,6,Leo,
+sporulation,PXD004473,5,7,Leo,8
+sporulation,PXD003765,5,8,Leo,7
+sporulation,PXD000422,1,X,Leo,
+sporulation,PXD002786,1,X,Leo,
+sporulation,PXD002840,1,X,Leo,
+sporulation,PXD008242,5,X,Leo,
+sporulation,PXD008860,1,X,Leo,
+sporulation,PXD009235,5,X,Leo,
+sporulation,PXD009960,3,X,Leo,
+sporulation,PXD012983,1,X,Leo,
+sporulation,PXD015380,0,X,Leo,
+sporulation,PXD015937,3,X,Leo,
+sporulation,PXD016848,2,X,Leo,
+,,,,,
+multi-drug resistance,PXD018793,5,1,Leo,7
+multi-drug resistance,PXD008968,3,X,Leo,
+multi-drug resistance,PXD005536,0,X,Leo,
+multi-drug resistance,PXD013539,5,X,Leo,3
+multi-drug resistance,PXD006546,5,X,Leo,4
+,,,,,
+SILAC labelling,PXD023180,5,1,Leo,
+SILAC labelling,PXD009990,5,2,Leo,
+SILAC labelling,PXD000713,5,3,Leo,4
+SILAC labelling,PXD000341,5,X,Leo,
+SILAC labelling,PXD002104,5,X,Leo,
+SILAC labelling,PXD007825,5,X,Leo,10
+SILAC labelling,PXD011071,4,X,Leo,
+SILAC labelling,PXD020984,5,X,Leo,1
+SILAC labelling,PXD021203,4,X,Leo,2
+SILAC labelling,PXD024601,5,X,Leo,
+,,,,,
+TMT-10,PXD013327,5,1,Leo,
+TMT-10,PXD017831,5,2,Leo,
+TMT-10,PXD013399,5,3,Leo,
+TMT-10,PXD009131,5,4,Leo,
+TMT-10,PXD011902,5,5,Leo,
+TMT-10,PXD007594,5,X,Leo,
+TMT-10,PXD008406,5,X,Leo,
+TMT-10,PXD008549,0,X,Leo,
+TMT-10,PXD008940,0,X,Leo,
+TMT-10,PXD011691,5,X,Leo,3
+TMT-10,PXD012936,0,X,Leo,
+TMT-10,PXD015276,5,X,Leo,
+TMT-10,PXD016140,0,X,Leo,
+TMT-10,PXD018744,0,X,Leo,
+TMT-10,PXD023304,0,X,Leo,
+,,,,,
+drug-drug interaction,PXD001210,5,1,Leo,
+drug-drug interaction,PXD000675,5,X,Leo,1
+drug-drug interaction,PXD007570,0,X,Leo,2
+drug-drug interaction,PXD013615,0,,Leo,3
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+cardiac differentiation,PXD027888,5,1,Leo,X
+cardiac differentiation,PXD018306,5,2,Leo,1
+cardiac differentiation,PXD006115,5,3,Leo,4
+cardiac differentiation,PXD008554,5,X,Leo,X
+cardiac differentiation,PXD012721,5,X,Leo,2
+,,,,,
+,,,,,
+MSFragger,PXD021196,5,1,Leo,
+MSFragger,PXD014066,5,X,Leo,
+MSFragger,PXD013683,5,X,Leo,
+MSFragger,PXD009861,5,X,Leo,
+MSFragger,PXD021196,5,X,Leo,
+MSFragger,PXD026600,5,X,Leo,
+
