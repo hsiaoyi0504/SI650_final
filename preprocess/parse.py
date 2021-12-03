@@ -17,17 +17,20 @@ for i in range(1,29446):
         summary = summary.find_all("td")
         row = ['PXD{:06d}'.format(i)]+[summary[i].getText() for i in range(1,26,2)]
         # print(tables[2])
-        # publication = tables[2].find("td").getText()
+        if tables[2].find("td"):
+            publication = tables[2].find("td").getText()
+        else:
+            publication = ""
         keyword = tables[3].getText()[20:]
-        # row += [publication, keyword]
-        row.append(keyword)
+        row += [publication, keyword]
+        # row.append(keyword)
         df.append(row)
 df = pd.DataFrame(df, columns=['id', 'Title', 'Description', 'HostingRepository', 'AnnounceDate',
                              'AnnouncementXML', 'DigitalObjectIdentifier', 'ReviewLevel',
                              'DatasetOrigin', 'RepositorySupport', 'PrimarySubmitter',
-                             'SpeciesList', 'ModificationList', 'Instrument', 'Keyword'])
+                             'SpeciesList', 'ModificationList', 'Instrument', 'Publication', 'Keyword'])
 
-df.to_csv('data.csv', index=False)
-with open('./HTMLdatasets.txt', 'w+') as f:
-    for line in datasets:
-        f.write(line+"\n")
+df.to_csv('data_new.csv', index=False)
+# with open('./HTMLdatasets.txt', 'w+') as f:
+#     for line in datasets:
+#         f.write(line+"\n")
