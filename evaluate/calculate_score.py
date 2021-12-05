@@ -6,8 +6,8 @@ import math
 
 
 
-def evaluation(searcher):
-    df = pd.read_csv('./Annotations.csv')
+def evaluation(searcher, annotation='./Annotations.csv'):
+    df = pd.read_csv(annotation)
     queries = pd.unique(df['Query'].dropna())
 
 
@@ -42,6 +42,7 @@ def evaluation(searcher):
         print(output_label)
     print(f'Average NDCG: {total_ndcg/len(queries)}')
 
-searcher1 = SimpleSearcher('../indexes/')
-evaluation(searcher1)
+if __name__ == '__main__':
+    searcher1 = SimpleSearcher('../indexes/')
+    evaluation(searcher1)
 
