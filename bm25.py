@@ -1,7 +1,8 @@
+import sys
 from pyserini.search import SimpleSearcher
 
 CUSTOMIZE_BM25 = True
-QUERY_EXPANSION = True
+QUERY_EXPANSION = False
 
 # Parameters for BM25
 BM25_k1 = 0.9 
@@ -19,7 +20,7 @@ if CUSTOMIZE_BM25:
 if QUERY_EXPANSION:
     searcher.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, True)
 
-hits = searcher.search('liver')
+hits = searcher.search(sys.argv[1])
 
 for i in range(10):
     print(f'{i+1:2} {hits[i].docid:4} {hits[i].score:.5f}')
