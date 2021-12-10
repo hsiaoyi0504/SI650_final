@@ -6,3 +6,11 @@ python -m pyserini.index -collection JsonCollection -generator DefaultLuceneDocu
 python -m pyserini.index -collection JsonCollection -generator DefaultLuceneDocumentGenerator -stemmer none -threads 1 -input ./preprocess/collection_json/ -index ./indexes_without_stemming/ -storePositions -storeDocvectors -storeRaw # without using stemmer
 python -m pyserini.index -collection JsonCollection -generator DefaultLuceneDocumentGenerator -stemmer krovetz -threads 1 -input ./preprocess/collection_json/ -index ./indexes_krovetz/ -storePositions -storeDocvectors -storeRaw # indexing using krovetz stemmer
 ```
+
+## How to run search engine website
+```
+export FLASK_APP=search 
+export FLASK_ENV=development 
+flask run
+```
+Open localhost:5000

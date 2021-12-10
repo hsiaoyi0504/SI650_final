@@ -1,0 +1,113 @@
+.feed {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  background: #FFFFFF;
+}
+
+.ProteomeX {
+  position: absolute;
+  width: 153px;
+  height: 44px;
+  left: 63px;
+  top: 63px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #FF60AC;
+}
+
+.bolder {
+  font-style: bold;
+  font-weight: bold;
+}
+
+.docs {
+  margin-top: 175px;
+  margin-left: 270px;
+  width: 750px;
+  position: absolute;
+}
+
+.doc_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #831349;
+
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.doc_url {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF60AC;
+}
+
+.doc_summary {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #535353;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 35px;
+}
+
+input[type=text] {
+  position: absolute;
+  width: 751px;
+  height: 69px;
+  left: 270px;
+  top: 44px;
+
+  background: #F8F8F8;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline-color: #E72A85;
+
+  padding-left: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #313131;
+}
+
+input[type=submit] {
+  position: absolute;
+  width: 194px;
+  height: 40px;
+  left: 1120px;
+  top: 64px;
+
+  color: #FFFFFF;
+  background: #E72A85;
+  border-radius: 3px;
+  border-color: transparent;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  padding: 4px;
+}
+
+
