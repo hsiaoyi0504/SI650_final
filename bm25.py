@@ -22,5 +22,5 @@ if QUERY_EXPANSION:
 
 hits = searcher.search(sys.argv[1])
 
-for i in range(10):
+for i in range(min(len(hits), 10)):
     print(f'{i+1:2} {hits[i].docid:4} {hits[i].score:.5f}')
