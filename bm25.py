@@ -1,6 +1,9 @@
 import sys
 from pyserini.search import SimpleSearcher
+from pyserini.analysis import Analyzer, get_lucene_analyzer
 
+
+DEBUG = True
 CUSTOMIZE_BM25 = True
 QUERY_EXPANSION = False
 
@@ -21,6 +24,12 @@ if QUERY_EXPANSION:
     searcher.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, True)
 
 hits = searcher.search(sys.argv[1])
+
+if DEBUG:
+    analyzer = Analyzer(get_lucene_analyzer())
+    tokens = analyzer.analyze(sys.argv[1])
+    print(tokens)
+    print("------------------------------")
 
 for i in range(min(len(hits), 10)):
     print(f'{i+1:2} {hits[i].docid:4} {hits[i].score:.5f}')

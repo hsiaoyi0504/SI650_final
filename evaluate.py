@@ -19,6 +19,8 @@ RM3_original_query_weight = 0.9 # weight to assign to the original query.
 searcher = SimpleSearcher('indexes/')
 # searcher.set_bm25(BM25_k1, BM25_b)
 # searcher.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, True)
+searcher_ner = SimpleSearcher('indexes_ner')
+
 searcher_1 = SimpleSearcher('indexes_krovetz/')
 analyzer_1 = analysis.get_lucene_analyzer(stemmer='krovetz')
 searcher_1.set_analyzer(analyzer_1)
@@ -44,6 +46,11 @@ annotation = './evaluate/Annotations.csv'
 print("Default:")
 evaluation(searcher, annotation)
 
+print("-------------------------------------------------------------")
+print("With NER:")
+evaluation(searcher_ner, annotation)
+
+stop
 print("-------------------------------------------------------------")
 print("BM25 with krovetz stemmer:")
 evaluation(searcher_1, annotation)
