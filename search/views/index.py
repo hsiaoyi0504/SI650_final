@@ -5,6 +5,7 @@ URLs include:
 /
 """
 import flask
+from markupsafe import escape
 import search
 from pyserini.search import SimpleSearcher
 import pandas as pd
@@ -55,4 +56,8 @@ def show_index():
     context = {"results": results, "query": query}
     return flask.render_template("results.html", **context)
 
+@search.app.route("/id/<id>")
+def record(id):
+   # TODO: check id exists in db
+   return flask.render_template("record.html", id=escape(id))
 
