@@ -5,6 +5,7 @@ URLs include:
 /
 """
 import flask
+from flask import url_for
 from markupsafe import escape
 import search
 from pyserini.search import SimpleSearcher
@@ -49,7 +50,7 @@ def show_index():
     for i in range(10):
         row = df[df.id == hits[i].docid].iloc[0]
         # print(row['Title'])
-        results.append({"url": base_URL + row['id'], "title": row['Title']})
+        results.append({"url": url_for('record', id=row['id']), "title": row['Title']})
         # print(f'{i+1:2} {hits[i].docid:4} {hits[i].score:.5f}')
 
 

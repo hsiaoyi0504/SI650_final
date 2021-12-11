@@ -18,17 +18,13 @@
     </div>
     <div class="docs">
             {% for result in results: %}
-                
-                <a class="doc_url" href={{result.url}}>{{result.url}}</a>
-                
-                <div class="doc_title">{{result.title}}</div>
+                <div class="doc_title"><a class="doc_url" href={{result.url}}>{{result.title}}</a></div>
                 
                 <!-- {%if result.summary == "" %}
                     <div class="doc_summary">No summary available</div>
                 {% else %}
                     <div class="doc_summary">{{result.summary}}</div>
                 {% endif %} -->
-            
             {% endfor %}
     </div>
 </div>
