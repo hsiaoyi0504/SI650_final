@@ -8,10 +8,14 @@ python -m pyserini.index -collection JsonCollection -generator DefaultLuceneDocu
 python -m pyserini.index -collection JsonCollection -generator DefaultLuceneDocumentGenerator -threads 1 -input ./preprocess/collection_json_ner/ -index ./indexes_ner/ -storePositions -storeDocvectors -storeRaw # default indexing using porter stemmer
 ```
 
-## How to run search engine website
+## Run the evaluation script
+``` bash
+python evaluate.py
 ```
+
+## How to run search engine website
+``` bash
 export FLASK_APP=search 
 export FLASK_ENV=development 
-flask run
+flask run  # then, open the browser and go to http://localhost:5000
 ```
-Open localhost:5000
