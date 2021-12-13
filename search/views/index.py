@@ -66,6 +66,7 @@ def record(id):
    # TODO: check id exists in db
    if id in ids:
        row = data[data['id'] == id]
+       related_records = data[(data['PublicationURL'] == row['PublicationURL'].values[0]) & (data['id'] != id)]['id'].tolist()
        return flask.render_template("record.html", id=escape(id),
         title=row['Title'].values[0], description=row['Description'].values[0],
         repo=row['HostingRepository'].values[0], date=row['AnnounceDate'].values[0],
@@ -79,6 +80,8 @@ def record(id):
         modification_list=row['ModificationList'].values[0],
         instrument=row['Instrument'].values[0],
         publication=row['Publication'].values[0],
-        keyword=row['Keyword'].values[0])
+        publication_url=row['PublicationURL'].values[0],
+        keyword=row['Keyword'].values[0],
+        related_records=related_records)
    return f"record id: {escape(id)} not found"
 

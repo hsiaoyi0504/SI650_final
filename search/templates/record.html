@@ -68,12 +68,25 @@
                 </tr>
                 <tr>
                     <td>Publication</td>
-                    <td>{{publication}}</td>
+                    <td>{{publication}}{% if publication_url %}[<a href="{{publication_url}}">pubmed</a>]{% endif %}</td>
+                </tr>
+                <tr>
+                    <td>Related records</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Keyword</td>
                     <td>{{keyword}}</td>
                 </tr>
+                <tr>
+                    <td>Related Datasets:</td>
+                </tr> 
+                {% for item in related_records%}
+                <tr>
+                    <td></td>
+                    <td><a href="{{url_for('record', id=item)}}">{{item}}</a></td>
+                <tr>
+                {% endfor %}
             </table>
             Original record: <a href="http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID={{id}}">here</a>
         </div>
