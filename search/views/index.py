@@ -11,6 +11,10 @@ import search
 from pyserini.search import SimpleSearcher
 import pandas as pd
 
+data = pd.read_csv("./preprocess/data_new.csv") 
+ids = data['id'].tolist()
+
+
 @search.app.route('/')
 def show_index():
     """Display / route."""
@@ -60,5 +64,8 @@ def show_index():
 @search.app.route("/id/<id>")
 def record(id):
    # TODO: check id exists in db
-   return flask.render_template("record.html", id=escape(id))
+   if id in ids:
+       row = data[data['id'] == id]
+       return flask.render_template("record.html", id=escape(id), title=row['Title'].values[0], description=row['Description'].values[0])
+   return f"record id: {escape(id)} not found"
 

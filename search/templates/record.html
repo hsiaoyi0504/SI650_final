@@ -7,12 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <div>
-    <div class="ProteomeX">
+    <!--- <div class="ProteomeX">
         <p>ProteomeX</p>
-    </div>
+    </div> --->
     <div class="data">
-        <div>{{id}}</div>
+        <h1>{{id}}</h1>
         <div>
+            <table>
+                <tr>
+                    <td>Title</td>
+                    <td>{{title}}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>{{description}}</td>
+                </tr>
+            </table>
             Original record: <a href="http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID={{id}}">here</a>
         </div>
     </div>
