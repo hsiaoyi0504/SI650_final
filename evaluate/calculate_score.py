@@ -34,12 +34,12 @@ def evaluation(searcher, annotation='./Annotations.csv'):
         dcg = np.dot(output_label, log)
         ndcg = dcg/idcg
         total_ndcg += ndcg
-        print(f'Query: {query}')
-        print(f'DCG: {dcg}')
-        print(f'iDCG: {idcg}')
-        print(f'NDCG: {ndcg}')
-        print(true_label)
-        print(output_label)
+        # print(f'Query: {query}')
+        # print(f'DCG: {dcg}')
+        # print(f'iDCG: {idcg}')
+        # print(f'NDCG: {ndcg}')
+        # print(true_label)
+        # print(output_label)
     print(f'Average NDCG: {total_ndcg/len(queries)}')
 
 if __name__ == '__main__':
