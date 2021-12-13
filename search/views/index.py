@@ -66,6 +66,19 @@ def record(id):
    # TODO: check id exists in db
    if id in ids:
        row = data[data['id'] == id]
-       return flask.render_template("record.html", id=escape(id), title=row['Title'].values[0], description=row['Description'].values[0])
+       return flask.render_template("record.html", id=escape(id),
+        title=row['Title'].values[0], description=row['Description'].values[0],
+        repo=row['HostingRepository'].values[0], date=row['AnnounceDate'].values[0],
+        xml_url=row['AnnouncementXML'].values[0],
+        doi=row['DigitalObjectIdentifier'].values[0],
+        review_level=row['ReviewLevel'].values[0],
+        dataset_origin=row['DatasetOrigin'].values[0],
+        repo_support=row['RepositorySupport'].values[0],
+        primary_submitter=row['PrimarySubmitter'].values[0],
+        species_list=row['SpeciesList'].values[0],
+        modification_list=row['ModificationList'].values[0],
+        instrument=row['Instrument'].values[0],
+        publication=row['Publication'].values[0],
+        keyword=row['Keyword'].values[0])
    return f"record id: {escape(id)} not found"
 
