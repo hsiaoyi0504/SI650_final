@@ -49,6 +49,16 @@ searcher_6 = SimpleSearcher('indexes/')
 searcher_6.set_bm25(BM25_k1, BM25_b)
 searcher_6.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, False)
 
+# Customized parameters for QE_BM25 using indexes from doubling title and adding keyword
+QE_BM25_k1_new = 0.55
+QE_BM25_b_new = 0.43
+
+searcher_7 = SimpleSearcher('indexes_without_stemming_new/')
+analyzer_7 = analysis.get_lucene_analyzer(stemming=False)
+searcher_7.set_analyzer(analyzer_7)
+searcher_7.set_bm25(QE_BM25_k1_new, QE_BM25_b_new)
+searcher_7.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, False)
+
 annotation = './evaluate/Annotations.csv'
 
 print("Default:")
@@ -71,12 +81,18 @@ print("-------------------------------------------------------------")
 print("Enable RM3 query expansion with default BM25 parameter:")
 evaluation(searcher_3, annotation)
 
-# print("-------------------------------------------------------------")
-# print("Enable RM3 query expansion with customized BM25 parameter:")
-# print(f'k1:{QE_BM25_k1}, b:{QE_BM25_b}')
-# evaluation(searcher_4, annotation)
+print("-------------------------------------------------------------")
+print("Enable RM3 query expansion with customized BM25 parameter:")
+print(f'k1:{QE_BM25_k1}, b:{QE_BM25_b}')
+evaluation(searcher_4, annotation)
 
 print("-------------------------------------------------------------")
 print("Without stemming and RM3 query expansion with customized BM25 parameter:")
 print(f'k1:{QE_BM25_k1}, b:{QE_BM25_b}')
 evaluation(searcher_5, annotation)
+
+
+print("-------------------------------------------------------------")
+print("Without stemming and RM3 query expansion with customized BM25 parameter using new indexes:")
+print(f'k1:{QE_BM25_k1_new}, b:{QE_BM25_b_new}')
+evaluation(searcher_7, annotation)

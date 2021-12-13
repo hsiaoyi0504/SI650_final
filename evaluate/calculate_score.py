@@ -26,6 +26,7 @@ def evaluation(searcher, annotation='./Annotations.csv'):
 
         output_label = [0]*10
         for i in range(min(10, len(hits))):
+            # print(hits[i].docid)
             score = df.loc[df['Query'] == query].loc[df['Entry'] == hits[i].docid]
             if not score.empty:
                 output_label[i] = score.iloc[0]['Score']
