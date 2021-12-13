@@ -1,6 +1,8 @@
 import sys
 from pyserini.search import SimpleSearcher
 from pyserini import analysis
+from pygaggle.rerank.transformer import MonoT5
+from pygaggle.rerank.transformer import MonoBERT
 from evaluate.calculate_score import evaluation
 
 
@@ -49,6 +51,9 @@ searcher_6 = SimpleSearcher('indexes/')
 searcher_6.set_bm25(BM25_k1, BM25_b)
 searcher_6.set_rm3(RM3_fb_terms, RM3_fb_docs, RM3_original_query_weight, False)
 
+# reranker = MonoT5()
+reranker = MonoBERT()
+
 annotation = './evaluate/Annotations.csv'
 
 print("Default:")
@@ -80,3 +85,8 @@ print("-------------------------------------------------------------")
 print("Without stemming and RM3 query expansion with customized BM25 parameter:")
 print(f'k1:{QE_BM25_k1}, b:{QE_BM25_b}')
 evaluation(searcher_5, annotation)
+
+print("-------------------------------------------------------------")
+print("Without stemming and RM3 query expansion with customized BM25 parameter and reranker:")
+print(f'k1:{QE_BM25_k1}, b:{QE_BM25_b}')
+evaluation(searcher_5, annotation, reranker=reranker)
