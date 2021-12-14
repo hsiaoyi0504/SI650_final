@@ -54,7 +54,8 @@ def show_index():
     for i in range(10):
         row = df[df.id == hits[i].docid].iloc[0]
         # print(row['Title'])
-        results.append({"url": url_for('record', id=row['id']), "title": row['Title']})
+        results.append({"url": url_for('record', id=row['id']), "id": row['id'], "title": row['Title'], 
+        "keyword": row['Keyword'], "date": row['AnnounceDate'], "instrument": row['Instrument']})
         # print(f'{i+1:2} {hits[i].docid:4} {hits[i].score:.5f}')
 
 

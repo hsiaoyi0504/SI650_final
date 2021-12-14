@@ -3,30 +3,86 @@
 <head>
     <title>ProteomeX</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<div class="feed">
-    <div class="ProteomeX">
-        <p>ProteomeX</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 card-margin">
+            <div class="card search-form">
+                <div class="card-body p-0">
+                    <form id="search-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                        <input type="text" placeholder="Search..." name="q" value="{{query}}" class="form-control" id="search" name="search">
+                                    </div>
+                                    <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                        <button type="submit" class="btn btn-base">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="search_bar">
-        <form action="/" method="GET">
-            <div><input type="text" name="q" value="{{query}}" /></div>
-            <input type="submit" value="Search" />
-        </form>
-    </div>
-    <div class="docs">
-            {% for result in results: %}
-                <div class="doc_title"><a class="doc_url" href={{result.url}}>{{result.title}}</a></div>
-                
-                <!-- {%if result.summary == "" %}
-                    <div class="doc_summary">No summary available</div>
-                {% else %}
-                    <div class="doc_summary">{{result.summary}}</div>
-                {% endif %} -->
-            {% endfor %}
-    </div>
-</div>
+    <div class="row">
+            <div class="col-12">
+                <div class="card card-margin">
+                    <div class="card-body">
+                        <div class="row search-body">
+                            <div class="col-lg-12">
+                                <div class="search-result">
+                                    <div class="result-body">
+                                        <div class="table-responsive">
+                                            <table class="table widget-26">
+                                                <tbody>
+                                                    {% for result in results: %}
+                                                    <tr>
+                                                        <!-- <td>
+                                                            <div class="widget-26-job-emp-img">
+                                                                <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Company" />
+                                                            </div>
+                                                        </td> -->
+                                                        <td>
+                                                            <div class="widget-26-job-title">
+                                                                <a href="{{result.url}}">{{result.id}}</a>
+                                                                <p class="m-0"><p class="employer-name">{{result.title}}</p> </p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="widget-26-job-info">
+                                                                <!-- <p class="type m-0">Full-Time</p> -->
+                                                                <p class="text-muted m-0"><span class="location">{{result.date}}</span></p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="widget-26-job-salary">{{result.instrument}}</div>
+                                                        </td>
+                                                        <td>
 
+                                                            <div class="widget-26-job-category bg-soft-base">
+                                                                <i class="indicator bg-base"></i>
+                                                                <span>{{result.keyword}}</span>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                    </tr>
+                                                    {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
