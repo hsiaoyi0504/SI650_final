@@ -1,7 +1,7 @@
 # SI650_final
 
 ## Prerequisite
-- [Pyserini](https://github.com/castorini/pyserini)`
+- [Pyserini](https://github.com/castorini/pyserini)
 - Java 11
 
 ## Indexing command
