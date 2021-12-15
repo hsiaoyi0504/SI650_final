@@ -1,5 +1,9 @@
 # SI650_final
 
+## Prerequisite
+- [Pyserini](https://github.com/castorini/pyserini)`
+- Java 11
+
 ## Indexing command
 ``` bash
 python -m pyserini.index -collection JsonCollection -generator DefaultLuceneDocumentGenerator -threads 1 -input ./preprocess/collection_json/ -index ./indexes/ -storePositions -storeDocvectors -storeRaw # default indexing using porter stemmer
